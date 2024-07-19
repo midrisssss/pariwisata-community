@@ -19,7 +19,7 @@ function App() {
 
   const handleLogin = (username, password) => {
     axios
-      .post("http://localhost:5000/login", {
+      .post("https://pariwisata-community.vercel.app/login", {
         username,
         password,
       })
