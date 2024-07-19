@@ -16,7 +16,7 @@ const Home = ({ token, onLogout}) => {
       const fetchData = async () => {
         await axios
           .get(
-            `http://localhost:5000/post/${searchParams.get("post")}?pages=${pages}`
+            `https://pariwisata-community.vercel.app/post/${searchParams.get("post")}?pages=${pages}`
           )
           .then((res) => {
             setDatas([...res.data]);
@@ -43,7 +43,7 @@ const Home = ({ token, onLogout}) => {
   };
 
   const handleShare = (e) => {
-    const currentUrl = `http://localhost:5173/home?post=${e.currentTarget.id}`;
+    const currentUrl = `https://pariwisata-community.vercel.app/home?post=${e.currentTarget.id}`;
     navigator.clipboard
       .writeText(currentUrl)
       .then(() => {
