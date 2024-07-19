@@ -12,7 +12,7 @@ function Signup() {
     e.preventDefault();
 
     axios
-      .post("http://localhost:5000/register", {
+      .post("https://pariwisata-community.vercel.app/register", {
         username,
         email,
         password,
