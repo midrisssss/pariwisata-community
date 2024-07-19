@@ -11,7 +11,7 @@ const Settings = ({ token, onLogout }) => {
   useEffect(() => {
     console.log("tokne" + token);
     axios
-      .get("http://localhost:5000/user", {
+      .get("https://pariwisata-community.vercel.app/user", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
