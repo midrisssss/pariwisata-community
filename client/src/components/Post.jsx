@@ -22,7 +22,7 @@ function Post({ token, onLogout }) {
 
     try {
       await axios
-        .post("http://localhost:5000/post", formData, {
+        .post("https://pariwisata-community.vercel.app/post", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
             "Authorization": `Bearer ${token}`,
